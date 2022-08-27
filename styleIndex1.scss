@@ -1,0 +1,160 @@
+*{margin: 0;
+padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Dancing+Script:wght@400;600&family=Qwitcher+Grypen&display=swap');
+
+
+body{
+    background-color: #fffaf1;
+
+header{
+
+    background-color: #004c36;
+    box-shadow: rgba(138, 138, 138, 0.863) 0px 5px 15px;
+ 
+    nav{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+
+        .logo-img{
+           max-height: 100px;
+
+        }
+        input{
+            display: none;
+         }
+
+         
+        label{
+                width: 35px;
+                padding: 31px ;
+        }
+
+        .menu{
+            color: #92845a;
+            font-size: 35px;
+            font-family: 'Qwitcher Grypen', sans-serif;
+            text-shadow: 0 8px 9px #aaadae, 0 -1px 1px #fff;
+            max-height: 0;
+
+            flex-basis: 100%;
+            list-style-type: none;
+            overflow: hidden;
+            }
+            
+         li{
+                padding: 0px 10px;
+            }
+    }
+}
+
+.container{
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    
+    div{
+        padding: 10px;
+        min-width: 150px;
+        position: relative;
+        text-align: center;
+        
+        
+        h3{color: #fff;
+            font-size: 45px;
+            text-shadow: black 2px 6px 5px;
+            text-shadow: #433d29 2px 2px;
+            font-family: 'Qwitcher Grypen', sans-serif ;
+            position: absolute;
+            top: 30%;
+            left: 29%;
+        }  
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-size: 0px;
+            text-shadow: rgb(255, 255, 255) 2px 2px ;
+            -webkit-text-stroke: black .5px;
+            position: absolute;
+            top: 60%;
+            left: 14%;
+        } 
+    }
+}
+
+header nav .menu li:hover {
+    cursor: pointer; 
+    font-size: 40px;
+    animation-name: bigger-menu35;
+    animation-duration: .2s;
+}
+
+.container div:hover img{
+    box-shadow: black 0px 5px 15px;
+    filter: brightness(60%) blur(2px) ;
+}
+.container div:hover h3{
+    font-size: 50px;
+    animation-name: bigger-menu45;
+    animation-duration: .5s;
+}
+.container div:hover p{
+    font-size: 20px;
+    animation-name: bigger-text20;
+    animation-duration: .2s;
+    }
+
+
+input:checked ~ .menu {
+    max-height: unset;
+    background-color: hwb(339 90% 3%);
+    animation-name: transition-menu;
+    animation-duration: 1s;    
+}
+
+
+
+@media screen and (min-width:600px) {
+
+    header{
+        flex-wrap: nowrap;
+    nav{
+        label{
+          display: none;    
+        }
+        .menu{
+            background-color: #004c36;
+            color: #c3b079;
+            min-width: 30px;
+            display: flex;
+            flex-basis: auto;
+            padding: 30px 30px ;
+            max-height: 35px;
+        }
+    }
+  }
+}
+}
+
+@keyframes transition-menu{
+    from{max-height: 0}
+    to{max-height: 150px;}
+}
+
+@keyframes bigger-text35{
+    from{font-size: 35px }
+    to{max-height: 40px;}
+}
+@keyframes bigger-text20{
+    from{font-size: 15px }
+    to{max-height: 20px;}
+}
+@keyframes bigger-text45{
+    from{font-size: 45px; }
+    to{max-height: 50px;}
+}
+
