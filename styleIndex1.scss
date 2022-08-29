@@ -8,6 +8,8 @@ padding: 0;
 body{
     background-color: #fffaf1;
 
+    
+
 header{
 
     background-color: #004c36;
@@ -63,6 +65,10 @@ header{
         position: relative;
         text-align: center;
         
+        img{
+            width: 244px;
+            height: 183px;
+        }
         
         h3{color: #fff;
             font-size: 45px;
@@ -91,6 +97,10 @@ header nav .menu li:hover {
     font-size: 40px;
     animation-name: bigger-menu35;
     animation-duration: .2s;
+}
+
+.container div:hover{
+    cursor: pointer;    
 }
 
 .container div:hover img{

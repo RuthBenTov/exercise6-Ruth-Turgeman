@@ -51,6 +51,10 @@ body .container div {
   position: relative;
   text-align: center;
 }
+body .container div img {
+  width: 244px;
+  height: 183px;
+}
 body .container div h3 {
   color: #fff;
   font-size: 45px;
@@ -79,8 +83,10 @@ body header nav .menu li:hover {
   -webkit-animation-duration: 0.2s;
           animation-duration: 0.2s;
 }
-body .container div:hover img {
+body .container div:hover {
   cursor: pointer;
+}
+body .container div:hover img {
   box-shadow: black 0px 5px 15px;
   filter: brightness(60%) blur(2px);
 }
